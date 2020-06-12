@@ -4,7 +4,7 @@ export const alias = {
   className: 'class',
   focus: 'focus',
   name: 'name',
-  maxlength: 'maxlength',
+  maxLength: 'maxlength',
   value: 'value',
   style: 'style',
   animation: 'animation',
