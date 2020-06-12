@@ -19,6 +19,7 @@ export interface InputProps extends BaseProps {
    * 最大输入长度，设置为 -1 的时候不限制最大长度
    */
   maxlength?: number;
+  maxLength?: number;
   /**
    * 1.0.0
    * 输入框的初始内容
@@ -149,6 +150,7 @@ Input.defaultProps = {
   confirmType: 'done',
   confirmHold: false,
   maxlength: 140,
+  maxLength: 140,
   selectionEnd: -1,
   selectionStart: -1,
   adjustPosition: true,
