@@ -13,7 +13,7 @@ hd();
 <%- pages.map((page, i) => `const page_manifest_${i} = ${JSON.stringify(page.config)}`).join('\n') %>
 <%- `const app_config = ${JSON.stringify(appConfig)}\n` %>
 
-const history = app_config.historyType === 'hash' ? createHashHistory() : createBrowserHistory();
+const history = app_config.historyType !== 'browser' ? createHashHistory() : createBrowserHistory();
 
 RuntimeOptions.apply({ history });
 
