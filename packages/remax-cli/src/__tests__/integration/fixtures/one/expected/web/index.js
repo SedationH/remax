@@ -93,7 +93,7 @@ var app_config = {
     }]
   }
 };
-var history = app_config.historyType === 'hash' ? Object(remax_web__WEBPACK_IMPORTED_MODULE_3__["createHashHistory"])() : Object(remax_web__WEBPACK_IMPORTED_MODULE_3__["createBrowserHistory"])();
+var history = app_config.historyType !== 'browser' ? Object(remax_web__WEBPACK_IMPORTED_MODULE_3__["createHashHistory"])() : Object(remax_web__WEBPACK_IMPORTED_MODULE_3__["createBrowserHistory"])();
 _remax_runtime__WEBPACK_IMPORTED_MODULE_4__["RuntimeOptions"].apply({
   history: history
 });
