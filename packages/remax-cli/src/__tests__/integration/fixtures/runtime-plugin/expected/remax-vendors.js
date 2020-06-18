@@ -898,7 +898,8 @@ var runtimeOptions = {
   debug: false,
   appEvents: [],
   pageEvents: {},
-  pluginDriver: new _PluginDriver__WEBPACK_IMPORTED_MODULE_0__["default"]([])
+  pluginDriver: new _PluginDriver__WEBPACK_IMPORTED_MODULE_0__["default"]([]),
+  history: {}
 };
 function apply(options) {
   runtimeOptions = __assign(__assign({}, runtimeOptions), options);
